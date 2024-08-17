@@ -37,3 +37,14 @@ class MagicalContactBook:
 
     def add_contact(self, contact):
         self._contacts.append(contact)
+
+    def list_contacts(self):
+        for contact in self._contacts:
+            contact.describe()
+            print()
+ def find_contact(self, name):
+        for contact in self._contacts:
+            if contact.name == name:
+                contact.describe()
+                return
+        print(f"Contact '{name}' not found.")
