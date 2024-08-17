@@ -22,3 +22,12 @@ class Wizard(MagicalContact):
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             print("invalid")
         self._house = house
+def wand(self):
+        return f"{self._wand['length']} cm , {self._wand['wood']}, {self._wand['core']}"
+      def house(self):
+        return self._house
+
+    def describe(self):
+        super().describe()
+        print(f"Wand: {self.wand}")
+        print(f"House: {self._house}")
