@@ -4,7 +4,7 @@ class MagicalContact:
         self._email = email
         self._phone_number = phone_number
     def name(self):
-        return self._name
+        return self_name
 def email(self):
         return self._email
 def phone_number(self):
@@ -31,3 +31,9 @@ def wand(self):
         super().describe()
         print(f"Wand: {self.wand}")
         print(f"House: {self._house}")
+class MagicalContactBook:
+    def __init__(self):
+        self._contacts = []
+
+    def add_contact(self, contact):
+        self._contacts.append(contact)
